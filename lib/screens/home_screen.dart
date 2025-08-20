@@ -21,11 +21,22 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) => ListTile(
           leading: const Icon(Icons.access_alarm_outlined),
           title: const Text('Nombre de la ruta'),
-          onTap: () {
+          /* onTap: () {
             final ruta = MaterialPageRoute(
               builder: (context) => const Listview2Screen(),
             );
             Navigator.push(context, ruta);
+          },*/
+          onTap: () {
+            if (index == 0) {
+              Navigator.pushNamed(context, 'listview2');
+            } else if (index == 1) {
+              Navigator.pushNamed(context, 'listview1');
+            } else if (index == 2) {
+              Navigator.pushNamed(context, 'alert');
+            } else if (index == 3) {
+              Navigator.pushNamed(context, 'card');
+            }
           },
         ),
         separatorBuilder: (context, index) => Divider(),
