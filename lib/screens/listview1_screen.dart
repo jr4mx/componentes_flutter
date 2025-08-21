@@ -12,7 +12,6 @@ class Listview1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 123, 150, 110),
         centerTitle: true,
         iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(

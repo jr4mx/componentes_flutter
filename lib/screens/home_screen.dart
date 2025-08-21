@@ -10,13 +10,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 80, 86, 168),
         title: const Text(
           'Servicios Estudiantiles',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
-        elevation: 0,
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
