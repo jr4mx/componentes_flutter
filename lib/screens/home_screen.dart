@@ -1,3 +1,4 @@
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:fl_components/routes/app_routes.dart';
 import 'package:fl_components/screens/listview1_screen.dart';
 import 'package:fl_components/screens/listview2_screen%20.dart';
@@ -20,7 +21,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) => ListTile(
           leading: Icon(
             AppRoutes.menuOptions[index].icon,
-            color: const Color.fromARGB(255, 71, 81, 172),
+            color: AppTheme.primaryC, // Use your theme's primary color
           ),
           title: Text(AppRoutes.menuOptions[index].name),
           /* onTap: () {
