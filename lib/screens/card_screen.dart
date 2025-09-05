@@ -11,7 +11,7 @@ class CardScreen extends StatelessWidget {
         centerTitle: true,
         iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
-          'Tarjetas',
+          'Eventos Culturales',
           style: TextStyle(color: Colors.white, fontSize: 30),
         ),
       ),

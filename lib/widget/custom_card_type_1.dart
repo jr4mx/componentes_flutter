@@ -12,29 +12,40 @@ class CustomCardType1 extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           ListTile(
-            leading: Icon(Icons.person, color: AppTheme.primaryC),
-            title: Text('José Rodrigo Pérez'),
-            subtitle: Text('Estudiante de Ingeniería en Sistemas'),
+            leading: Icon(Icons.music_note_rounded, color: Colors.indigo),
+            title: Text('Concierto de Alientos'),
+            subtitle: Text('Ensamble con estudiantes del IUBA'),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TextButton(
-                //posicionado a la derecha
-                child: const Text('Ver más'),
-                onPressed: () {
-                  // Acción al presionar el botón de ver más
-                },
-              ),
-              TextButton.icon(
-                //posicionado a la derecha
-                icon: Icon(Icons.edit, color: AppTheme.primaryC),
-                label: const Text('Editar'),
-                onPressed: () {
-                  // Acción al presionar el botón de ver más
-                },
-              ),
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: const [
+              Icon(Icons.calendar_month, color: Colors.indigoAccent),
+              Text('20 de Octubre 2023'),
+              Icon(Icons.location_on, color: Colors.indigo),
+              Text('Auditorio IUBA'),
             ],
+          ), //horario
+          Padding(
+            padding: const EdgeInsets.only(right: 5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                  //posicionado a la derecha
+                  child: const Text('info'),
+                  onPressed: () {
+                    // Acción al presionar el botón de ver más
+                  },
+                ),
+                TextButton(
+                  //posicionado a la derecha
+                  child: const Text('Editar'),
+                  onPressed: () {
+                    // Acción al presionar el botón de ver más
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
