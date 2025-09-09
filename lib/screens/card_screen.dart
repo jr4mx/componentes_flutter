@@ -1,4 +1,4 @@
-import 'package:fl_components/widget/custom_card_type_1.dart';
+import 'package:fl_components/widget/widgets.dart';
 import 'package:flutter/material.dart';
 
 class CardScreen extends StatelessWidget {
@@ -7,15 +7,15 @@ class CardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        iconTheme: const IconThemeData(color: Colors.white),
-        title: const Text(
-          'Eventos Culturales',
-          style: TextStyle(color: Colors.white, fontSize: 30),
-        ),
+      appBar: AppBar(title: const Text('Card Eventos Culturales')),
+      body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        children: const [
+          CustomCardType1(),
+          SizedBox(height: 10),
+          CustomCardType2(),
+        ],
       ),
-      body: ListView(children: const [CustomCardType1()]),
     );
   }
 }
