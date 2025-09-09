@@ -7,13 +7,29 @@ class CardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Card Eventos Culturales')),
+      appBar: AppBar(title: const Text('Eventos Culturales')),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         children: const [
           CustomCardType1(),
           SizedBox(height: 10),
-          CustomCardType2(),
+          CustomCardType2(
+            name: 'Mexicanísimo el musical',
+            imageUrl:
+                'https://www.ucol.mx/content/agenda/adjuntos/400x220_2_1910.jpg',
+          ),
+          SizedBox(height: 10),
+          CustomCardType2(
+            name: 'La magia del folclór',
+            imageUrl:
+                'https://www.ucol.mx/content/agenda/adjuntos//400x200_1888.jpg',
+          ),
+          SizedBox(height: 10),
+          CustomCardType2(
+            imageUrl:
+                'https://www.ucol.mx/content/agenda/adjuntos//400x220_1892.jpg',
+          ),
+          SizedBox(height: 100),
         ],
       ),
     );
