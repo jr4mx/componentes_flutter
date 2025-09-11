@@ -36,6 +36,12 @@ class AppRoutes {
       icon: Icons.music_note_outlined,
       screen: const CardScreen(),
     ),
+    MenuOption(
+      route: 'avatar',
+      name: 'Perfil de Usuario',
+      icon: Icons.supervised_user_circle,
+      screen: const AvatarScreen(),
+    ),
   ];
 
   static Map<String, Widget Function(BuildContext)> routes = {
